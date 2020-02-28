@@ -247,7 +247,7 @@ someArithmeticCalculations =
     - если n < 0, то "negative"
 -}
 tellSign :: Int -> String
-tellSign n = error "not implemented"
+tellSign n = if n == 0 then "zero" else if n > 0 then "positive" else "negative"
 
 {-
   `howManyDigits` возвращает количество цифр целого числа `n`:
@@ -256,7 +256,7 @@ tellSign n = error "not implemented"
     - если n >= 100, то "three-digit or more"
 -}
 howManyDigits :: Int -> String
-howManyDigits n = error "not implemented"
+howManyDigits n = if n < 10 then "single" else if n < 100 then "two-digit" else "three-digit or more"
 
 {-
   `describeNumber` возвращает полное описание целого числа, используя
@@ -267,7 +267,7 @@ howManyDigits n = error "not implemented"
     - если n >= 100, то "positive three-digit or more"
 -}
 describeNumber :: Int -> String
-describeNumber n = error "not implemented"
+describeNumber n = if n == 0 then "zero single"
 
 -- </Задачи для самостоятельного решения>
 
