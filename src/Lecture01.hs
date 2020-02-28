@@ -268,7 +268,6 @@ howManyDigits n = if n < 10 then "single" else if n < 100 then "two-digit" else 
 -}
 describeNumber :: Int -> String
 describeNumber n = if n == 0 then "zero single"
-
 -- </Задачи для самостоятельного решения>
 
 -- Рекурсия:
