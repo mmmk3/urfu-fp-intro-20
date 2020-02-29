@@ -267,7 +267,7 @@ howManyDigits n = if n < 10 then "single" else if n < 100 then "two-digit" else 
     - если n >= 100, то "positive three-digit or more"
 -}
 describeNumber :: Int -> String
-describeNumber n = if n == 0 then "zero single"
+describeNumber n = error "not implemented"
 -- </Задачи для самостоятельного решения>
 
 -- Рекурсия:
